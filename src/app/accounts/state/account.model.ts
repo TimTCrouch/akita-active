@@ -1,5 +1,5 @@
 
-export class Account {
+export interface Account  {
   id: number;
   fullName: string;
   balance: number;
@@ -8,3 +8,5 @@ export class Account {
   state: string;
   zip: string;
 }
+
+

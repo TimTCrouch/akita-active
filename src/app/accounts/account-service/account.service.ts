@@ -28,6 +28,5 @@ export class AccountService {
 
   update(account: Account): void {
     this.accountStore.updateActive({...account});
-    // this.accountStore.updateActive({fullName: 'Raff'});
   }
 }

@@ -8,7 +8,7 @@ import {AccountService} from '../account-service/account.service';
   styleUrls: ['./account-edit.component.scss']
 })
 export class AccountEditComponent implements OnInit {
-  account: Account = new Account();
+  account: Account = {id: 0, fullName: '', balance: 0, address: '', city: '', state: '', zip: ''};
 
   constructor(private readonly accountService: AccountService) { }
 
