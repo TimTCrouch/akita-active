@@ -26,7 +26,7 @@ export class AccountService {
     this.accountStore.setActive(id);
   }
 
-  update(account: Account): void {
+  update(account: Partial<Account>): void {
     this.accountStore.updateActive({...account});
   }
 }
